@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+<title id="title">SiteGuard 16 website launch readiness checks</title>
+<desc id="desc">Five launch domains: domain and delivery, search and indexing, experience and privacy, performance and trust, operations and recovery. A six-step launch assurance workflow and key guardrails appear below.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fcff"/><stop offset="1" stop-color="#e7f5ff"/></linearGradient>
+<linearGradient id="blue"><stop offset="0" stop-color="#07569b"/><stop offset="1" stop-color="#087f9f"/></linearGradient>
+<linearGradient id="teal"><stop offset="0" stop-color="#087c91"/><stop offset="1" stop-color="#0d9488"/></linearGradient>
+<linearGradient id="violet"><stop offset="0" stop-color="#4357b8"/><stop offset="1" stop-color="#5b55b8"/></linearGradient>
+<linearGradient id="green"><stop offset="0" stop-color="#087f75"/><stop offset="1" stop-color="#0e8c9b"/></linearGradient>
+<linearGradient id="amber"><stop offset="0" stop-color="#a86308"/><stop offset="1" stop-color="#c17c13"/></linearGradient>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#10233f}.muted{fill:#50647f}.white{fill:#fff}.title{font-size:40px;font-weight:800}.sub{font-size:19px;fill:#47617e}.head{font-size:19px;font-weight:800;fill:#fff}.n{font-size:17px;font-weight:800;fill:#07569b}.name{font-size:17px;font-weight:800}.desc{font-size:14px;fill:#30455e}.panel{fill:#fff;stroke:#9ac9e9;stroke-width:1.6}.tile{fill:#f8fcff;stroke:#c4dfef;stroke-width:1.1}.step{font-size:17px;font-weight:700;fill:#123454}.tiny{font-size:14px}
+</style></defs>
+<rect width="1600" height="1040" rx="24" fill="url(#bg)"/>
+<path d="M0 100 L100 0 M0 145 L145 0 M1510 0 L1600 90" stroke="#b5eaff" stroke-width="12" opacity=".8"/>
+<circle cx="92" cy="62" r="26" fill="#d7f3ff"/><path d="M80 68 L92 44 L104 68 M87 61 H97" stroke="#0870b9" stroke-width="4" fill="none" stroke-linecap="round"/>
+<text x="800" y="64" text-anchor="middle" class="title">16 WEBSITE LAUNCH READINESS CHECKS</text>
+<text x="800" y="99" text-anchor="middle" class="sub">From domain to monitoring — evidence to verify before going live</text>
+<!-- domain -->
+<rect x="24" y="138" width="298" height="565" rx="18" class="panel"/><rect x="24" y="138" width="298" height="72" rx="18" fill="url(#blue)"/><text x="173" y="169" text-anchor="middle" class="head">01 · DOMAIN &amp; DELIVERY</text><text x="173" y="192" text-anchor="middle" class="tiny white">4 checks</text>
+<g>
+<rect x="40" y="226" width="266" height="104" rx="10" class="tile"/><text x="55" y="253" class="n">01</text><text x="94" y="253" class="name">Domain &amp; DNS</text><text x="55" y="279" class="desc">Correct A/AAAA/CNAME; remove</text><text x="55" y="299" class="desc">stale records; prevent dangling</text><text x="55" y="319" class="desc">subdomains and takeover.</text>
+<rect x="40" y="340" width="266" height="104" rx="10" class="tile"/><text x="55" y="367" class="n">02</text><text x="94" y="367" class="name">HTTPS &amp; TLS</text><text x="55" y="393" class="desc">Valid chain, modern TLS, renewal</text><text x="55" y="413" class="desc">owner, HTTP→HTTPS redirect</text><text x="55" y="433" class="desc">and no mixed content.</text>
+<rect x="40" y="454" width="266" height="104" rx="10" class="tile"/><text x="55" y="481" class="n">03</text><text x="94" y="481" class="name">robots.txt</text><text x="55" y="507" class="desc">Intentional crawler rules at root;</text><text x="55" y="527" class="desc">crawler guidance only, not access</text><text x="55" y="547" class="desc">control for private resources.</text>
+<rect x="40" y="568" width="266" height="104" rx="10" class="tile"/><text x="55" y="595" class="n">04</text><text x="94" y="595" class="name">sitemap.xml</text><text x="55" y="621" class="desc">Valid XML, canonical absolute URLs,</text><text x="55" y="641" class="desc">only intended indexable pages,</text><text x="55" y="661" class="desc">accurate lastmod where maintained.</text>
+</g>
+<!-- search -->
+<rect x="338" y="138" width="298" height="565" rx="18" class="panel"/><rect x="338" y="138" width="298" height="72" rx="18" fill="url(#teal)"/><text x="487" y="169" text-anchor="middle" class="head">02 · SEARCH &amp; INDEXING</text><text x="487" y="192" text-anchor="middle" class="tiny white">3 checks</text>
+<g>
+<rect x="354" y="226" width="266" height="136" rx="10" class="tile"/><text x="369" y="253" class="n">05</text><text x="408" y="253" class="name">Indexability</text><text x="369" y="279" class="desc">No accidental noindex, auth wall,</text><text x="369" y="299" class="desc">robots block or canonical pointing</text><text x="369" y="319" class="desc">away from intended public pages.</text><text x="369" y="343" class="desc">Inspect rendered HTML + headers.</text>
+<rect x="354" y="372" width="266" height="136" rx="10" class="tile"/><text x="369" y="399" class="n">06</text><text x="408" y="399" class="name">Google Search Console</text><text x="369" y="425" class="desc">Verify property ownership, submit</text><text x="369" y="445" class="desc">sitemap, review Page Indexing and</text><text x="369" y="465" class="desc">inspect priority URLs. Owner access</text><text x="369" y="489" class="desc">is required; public scan cannot prove it.</text>
+<rect x="354" y="518" width="266" height="154" rx="10" class="tile"/><text x="369" y="545" class="n">07</text><text x="408" y="545" class="name">SEO metadata</text><text x="369" y="571" class="desc">Unique titles/descriptions, canonical</text><text x="369" y="591" class="desc">URLs, social preview metadata and</text><text x="369" y="611" class="desc">valid structured data where relevant.</text><text x="369" y="641" class="desc">Check rendered pages, not source alone.</text>
+</g>
+<!-- ux -->
+<rect x="652" y="138" width="298" height="565" rx="18" class="panel"/><rect x="652" y="138" width="298" height="72" rx="18" fill="url(#violet)"/><text x="801" y="169" text-anchor="middle" class="head">03 · EXPERIENCE &amp; PRIVACY</text><text x="801" y="192" text-anchor="middle" class="tiny white">4 checks</text>
+<g>
+<rect x="668" y="226" width="266" height="104" rx="10" class="tile"/><text x="683" y="253" class="n">08</text><text x="722" y="253" class="name">Analytics (GA4)</text><text x="683" y="279" class="desc">Validate measurement and events,</text><text x="683" y="299" class="desc">internal traffic, realtime/debug data;</text><text x="683" y="319" class="desc">do not send personal data.</text>
+<rect x="668" y="340" width="266" height="104" rx="10" class="tile"/><text x="683" y="367" class="n">09</text><text x="722" y="367" class="name">Privacy &amp; consent</text><text x="683" y="393" class="desc">Privacy/cookie notices; lawful basis</text><text x="683" y="413" class="desc">and consent where required; test</text><text x="683" y="433" class="desc">accept, reject, withdraw and persist.</text>
+<rect x="668" y="454" width="266" height="104" rx="10" class="tile"/><text x="683" y="481" class="n">10</text><text x="722" y="481" class="name">Content &amp; navigation</text><text x="683" y="507" class="desc">Working links/forms, contact/legal</text><text x="683" y="527" class="desc">details, helpful 404, no placeholder</text><text x="683" y="547" class="desc">content or broken journeys.</text>
+<rect x="668" y="568" width="266" height="104" rx="10" class="tile"/><text x="683" y="595" class="n">11</text><text x="722" y="595" class="name">Accessibility</text><text x="683" y="621" class="desc">Target WCAG 2.2 AA where applicable;</text><text x="683" y="641" class="desc">keyboard, labels, focus, contrast,</text><text x="683" y="661" class="desc">zoom, captions and alt text.</text>
+</g>
+<!-- performance -->
+<rect x="966" y="138" width="298" height="565" rx="18" class="panel"/><rect x="966" y="138" width="298" height="72" rx="18" fill="url(#green)"/><text x="1115" y="169" text-anchor="middle" class="head">04 · PERFORMANCE &amp; TRUST</text><text x="1115" y="192" text-anchor="middle" class="tiny white">3 checks</text>
+<g>
+<rect x="982" y="226" width="266" height="136" rx="10" class="tile"/><text x="997" y="253" class="n">12</text><text x="1036" y="253" class="name">Performance</text><text x="997" y="279" class="desc">Field p75 targets: LCP ≤2.5s,</text><text x="997" y="299" class="desc">INP ≤200ms, CLS ≤0.1. Optimize</text><text x="997" y="319" class="desc">images/fonts, caching, compression.</text><text x="997" y="343" class="desc">Use Lighthouse as lab evidence too.</text>
+<rect x="982" y="372" width="266" height="136" rx="10" class="tile"/><text x="997" y="399" class="n">13</text><text x="1036" y="399" class="name">Domain email security</text><text x="997" y="425" class="desc">SPF covers real senders; DKIM signs</text><text x="997" y="445" class="desc">outbound mail; DMARC alignment and</text><text x="997" y="465" class="desc">policy monitored before enforcement.</text><text x="997" y="489" class="desc">Verify received-message headers.</text>
+<rect x="982" y="518" width="266" height="154" rx="10" class="tile"/><text x="997" y="545" class="n">14</text><text x="1036" y="545" class="name">Response headers</text><text x="997" y="571" class="desc">CSP, HSTS, nosniff, Referrer-Policy,</text><text x="997" y="591" class="desc">Permissions-Policy and framing policy.</text><text x="997" y="611" class="desc">Test browser behaviour; tune policy</text><text x="997" y="641" class="desc">before enforcing restrictive CSP.</text>
+</g>
+<!-- operations -->
+<rect x="1280" y="138" width="296" height="565" rx="18" class="panel"/><rect x="1280" y="138" width="296" height="72" rx="18" fill="url(#amber)"/><text x="1428" y="169" text-anchor="middle" class="head">05 · OPERATIONS &amp; RECOVERY</text><text x="1428" y="192" text-anchor="middle" class="tiny white">2 checks</text>
+<g>
+<rect x="1296" y="226" width="264" height="208" rx="10" class="tile"/><text x="1311" y="253" class="n">15</text><text x="1350" y="253" class="name">Monitoring &amp; support</text><text x="1311" y="281" class="desc">Uptime, errors, certificate expiry,</text><text x="1311" y="303" class="desc">security events and key journeys.</text><text x="1311" y="325" class="desc">Name alert owners and escalation</text><text x="1311" y="347" class="desc">paths; trigger a test alert and</text><text x="1311" y="369" class="desc">confirm delivery and response.</text>
+<rect x="1296" y="444" width="264" height="228" rx="10" class="tile"/><text x="1311" y="471" class="n">16</text><text x="1350" y="471" class="name">Backup &amp; rollback</text><text x="1311" y="499" class="desc">Define RPO/RTO and owners. Restore</text><text x="1311" y="521" class="desc">backup into a separate environment.</text><text x="1311" y="543" class="desc">Test deployment rollback and database</text><text x="1311" y="565" class="desc">migration recovery; record evidence</text><text x="1311" y="587" class="desc">and measured recovery time.</text>
+</g>
+<!-- workflow -->
+<rect x="24" y="725" width="1552" height="132" rx="18" fill="#e1f5ff" stroke="#70bde9" stroke-width="2"/><text x="800" y="760" text-anchor="middle" font-size="23" font-weight="800" fill="#123454">CONTINUOUS LAUNCH ASSURANCE</text>
+<g>
+<rect x="48" y="782" width="224" height="56" rx="12" fill="#fff" stroke="#8ccde9"/><text x="160" y="817" text-anchor="middle" class="step">1 · Scope</text>
+<rect x="300" y="782" width="224" height="56" rx="12" fill="#fff" stroke="#8ccde9"/><text x="412" y="817" text-anchor="middle" class="step">2 · Configure</text>
+<rect x="552" y="782" width="224" height="56" rx="12" fill="#fff" stroke="#8ccde9"/><text x="664" y="817" text-anchor="middle" class="step">3 · Validate</text>
+<rect x="804" y="782" width="224" height="56" rx="12" fill="#fff" stroke="#8ccde9"/><text x="916" y="817" text-anchor="middle" class="step">4 · Record evidence</text>
+<rect x="1056" y="782" width="224" height="56" rx="12" fill="#fff" stroke="#8ccde9"/><text x="1168" y="817" text-anchor="middle" class="step">5 · Go / No-Go</text>
+<rect x="1308" y="782" width="244" height="56" rx="12" fill="#fff" stroke="#8ccde9"/><text x="1430" y="817" text-anchor="middle" class="step">6 · Monitor</text>
+<path d="M274 810 H295 M526 810 H547 M778 810 H799 M1030 810 H1051 M1282 810 H1303" stroke="#0870b9" stroke-width="3"/><path d="M287 802 L296 810 L287 818 M539 802 L548 810 L539 818 M791 802 L800 810 L791 818 M1043 802 L1052 810 L1043 818 M1295 802 L1304 810 L1295 818" stroke="#0870b9" stroke-width="3" fill="none"/>
+</g>
+<rect x="24" y="878" width="1552" height="112" rx="16" fill="#fff" stroke="#7eb8dc" stroke-width="1.6"/>
+<rect x="44" y="903" width="185" height="62" rx="12" fill="#0c3157"/><text x="136" y="941" text-anchor="middle" class="head">KEY GUARDRAILS</text>
+<text x="255" y="919" font-size="17" font-weight="700" fill="#a45a00">⚠ robots.txt is crawler guidance, not access control.</text><text x="255" y="947" class="tiny muted">Never use it to hide private routes or sensitive data.</text>
+<path d="M700 894 V972" stroke="#c2d8e8" stroke-width="2"/>
+<text x="730" y="919" font-size="17" font-weight="700" fill="#a45a00">⚠ A sitemap does not guarantee indexing.</text><text x="730" y="947" class="tiny muted">Crawling, canonical selection and indexing are separate.</text>
+<path d="M1185 894 V972" stroke="#c2d8e8" stroke-width="2"/>
+<text x="1210" y="919" font-size="17" font-weight="700" fill="#a45a00">⚠ Owner access is required.</text><text x="1210" y="947" class="tiny muted">Verify Search Console, GA4, consent and restore evidence.</text>
+<text x="800" y="1020" text-anchor="middle" class="tiny muted">SITEGUARD PLAYBOOK · RAHUL TRIPATHI · A PRE-LAUNCH CONTROL GATE, NOT A SECURITY CERTIFICATION</text>
+</svg>

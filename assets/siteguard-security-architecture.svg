@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180" role="img" aria-labelledby="title desc">
+<title id="title">SiteGuard secure website architecture</title>
+<desc id="desc">A layered security architecture showing users, edge protection, four application security domains, protected resources, continuous security operations, and separate launch readiness checks. Twenty common attack scenarios are mapped to controls.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07152f"/><stop offset="1" stop-color="#101f3e"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#123d70"/><stop offset="1" stop-color="#155e75"/></linearGradient>
+  <linearGradient id="ops" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#123b35"/><stop offset="1" stop-color="#164e63"/></linearGradient>
+  <style>
+    text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#eef4ff}
+    .muted{fill:#aabbd5}.tiny{font-size:15px}.small{font-size:17px}.body{font-size:19px}.head{font-size:24px;font-weight:700}.section{font-size:21px;font-weight:700;letter-spacing:1px}
+    .panel{fill:#0d1c37;stroke:#355276;stroke-width:2}.tile{fill:#122746;stroke:#345778;stroke-width:1.5}.num{fill:#6ee7d8;font-weight:700}.cyan{fill:#7dd3fc}.orange{fill:#fdba74}.green{fill:#86efac}
+  </style>
+</defs>
+<rect width="1600" height="1180" rx="28" fill="url(#bg)"/>
+<text x="800" y="58" text-anchor="middle" font-size="34" font-weight="800" letter-spacing="2">SITEGUARD</text>
+<text x="800" y="91" text-anchor="middle" font-size="19" class="muted">SECURE WEBSITE ARCHITECTURE · ZERO-TRUST BY DESIGN</text>
+<text x="800" y="125" text-anchor="middle" font-size="17" class="cyan">Verify every identity · validate every request · protect every resource · monitor continuously</text>
+
+<!-- entry -->
+<rect x="55" y="165" width="245" height="125" rx="16" class="panel"/>
+<text x="177" y="200" text-anchor="middle" class="section">01 · ENTRY POINTS</text>
+<text x="177" y="235" text-anchor="middle" class="body">Visitors · Admins</text>
+<text x="177" y="263" text-anchor="middle" class="small muted">Browsers · APIs · Devices</text>
+<path d="M300 227 H365" stroke="#7dd3fc" stroke-width="4" fill="none"/><path d="M352 215 L366 227 L352 239" stroke="#7dd3fc" stroke-width="4" fill="none"/>
+
+<!-- edge -->
+<rect x="375" y="155" width="850" height="145" rx="18" fill="url(#edge)" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="800" y="192" text-anchor="middle" class="section">02 · EDGE &amp; ZERO-TRUST ACCESS</text>
+<text x="800" y="223" text-anchor="middle" class="small muted">Cloudflare / CDN / reverse proxy / trusted ingress</text>
+<g>
+<rect x="405" y="242" width="150" height="40" rx="9" class="tile"/><text x="480" y="268" text-anchor="middle" class="small">TLS · HTTPS</text>
+<rect x="570" y="242" width="150" height="40" rx="9" class="tile"/><text x="645" y="268" text-anchor="middle" class="small">WAF · DDoS</text>
+<rect x="735" y="242" width="150" height="40" rx="9" class="tile"/><text x="810" y="268" text-anchor="middle" class="small">Rate limits</text>
+<rect x="900" y="242" width="150" height="40" rx="9" class="tile"/><text x="975" y="268" text-anchor="middle" class="small">Origin lock</text>
+<rect x="1065" y="242" width="130" height="40" rx="9" class="tile"/><text x="1130" y="268" text-anchor="middle" class="small">IP trust</text>
+</g>
+<path d="M800 300 V340" stroke="#7dd3fc" stroke-width="4"/><path d="M788 328 L800 342 L812 328" stroke="#7dd3fc" stroke-width="4" fill="none"/>
+
+<!-- core -->
+<rect x="55" y="350" width="1170" height="445" rx="18" class="panel"/>
+<text x="640" y="390" text-anchor="middle" class="section">03 · APPLICATION SECURITY BOUNDARY</text>
+<text x="640" y="418" text-anchor="middle" class="small muted">Controls are enforced server-side; client-side checks are never the authorization boundary</text>
+
+<!-- Four domains -->
+<g>
+<rect x="80" y="445" width="270" height="320" rx="14" fill="#102b4b" stroke="#38bdf8" stroke-width="2"/>
+<text x="215" y="481" text-anchor="middle" class="head cyan">IDENTITY &amp; SESSION</text>
+<text x="100" y="520" class="small"><tspan class="num">01</tspan><tspan dx="9">OAuth / SAML claim validation</tspan></text>
+<text x="100" y="555" class="small"><tspan class="num">02</tspan><tspan dx="9">MFA replay &amp; recovery</tspan></text>
+<text x="100" y="590" class="small"><tspan class="num">03</tspan><tspan dx="9">JWT algorithm confusion</tspan></text>
+<text x="100" y="625" class="small"><tspan class="num">04</tspan><tspan dx="9">Session lifecycle &amp; expiry</tspan></text>
+<text x="100" y="660" class="small"><tspan class="num">05</tspan><tspan dx="9">Unicode identity uniqueness</tspan></text>
+<text x="100" y="715" class="tiny muted">Stable issuer / audience / subject</text>
+
+<rect x="365" y="445" width="270" height="320" rx="14" fill="#2a2344" stroke="#a78bfa" stroke-width="2"/>
+<text x="500" y="481" text-anchor="middle" class="head" fill="#c4b5fd">APP &amp; INPUT</text>
+<text x="385" y="520" class="small"><tspan fill="#c4b5fd" font-weight="700">06</tspan><tspan dx="9">Injection &amp; unsafe parsing</tspan></text>
+<text x="385" y="555" class="small"><tspan fill="#c4b5fd" font-weight="700">07</tspan><tspan dx="9">Template injection / XSS</tspan></text>
+<text x="385" y="590" class="small"><tspan fill="#c4b5fd" font-weight="700">08</tspan><tspan dx="9">Prototype pollution</tspan></text>
+<text x="385" y="625" class="small"><tspan fill="#c4b5fd" font-weight="700">09</tspan><tspan dx="9">ReDoS / bounded input</tspan></text>
+<text x="385" y="660" class="small"><tspan fill="#c4b5fd" font-weight="700">10</tspan><tspan dx="9">XXE / file upload controls</tspan></text>
+<text x="385" y="715" class="tiny muted">Validate · encode · constrain · isolate</text>
+
+<rect x="650" y="445" width="270" height="320" rx="14" fill="#3a2b1d" stroke="#fb923c" stroke-width="2"/>
+<text x="785" y="481" text-anchor="middle" class="head orange">API &amp; PROTOCOL</text>
+<text x="670" y="520" class="small"><tspan class="orange" font-weight="700">11</tspan><tspan dx="9">GraphQL aliases / complexity</tspan></text>
+<text x="670" y="555" class="small"><tspan class="orange" font-weight="700">12</tspan><tspan dx="9">HTTP/2 Rapid Reset / DoS</tspan></text>
+<text x="670" y="590" class="small"><tspan class="orange" font-weight="700">13</tspan><tspan dx="9">Request smuggling</tspan></text>
+<text x="670" y="625" class="small"><tspan class="orange" font-weight="700">14</tspan><tspan dx="9">WebSocket hijack / Origin</tspan></text>
+<text x="670" y="660" class="small"><tspan class="orange" font-weight="700">15</tspan><tspan dx="9">CSRF / CORS / cache poisoning</tspan></text>
+<text x="670" y="715" class="tiny muted">Bound requests · verify origin · authorize</text>
+
+<rect x="935" y="445" width="265" height="320" rx="14" fill="#12352f" stroke="#4ade80" stroke-width="2"/>
+<text x="1067" y="481" text-anchor="middle" class="head green">DATA &amp; TRUST</text>
+<text x="955" y="520" class="small"><tspan class="green" font-weight="700">16</tspan><tspan dx="9">IDOR / BOLA / RLS</tspan></text>
+<text x="955" y="555" class="small"><tspan class="green" font-weight="700">17</tspan><tspan dx="9">SSRF / private endpoints</tspan></text>
+<text x="955" y="590" class="small"><tspan class="green" font-weight="700">18</tspan><tspan dx="9">CSPRNG / timing-safe compare</tspan></text>
+<text x="955" y="625" class="small"><tspan class="green" font-weight="700">19</tspan><tspan dx="9">Padding oracle / crypto errors</tspan></text>
+<text x="955" y="660" class="small"><tspan class="green" font-weight="700">20</tspan><tspan dx="9">Secrets / least privilege</tspan></text>
+<text x="955" y="715" class="tiny muted">Encrypt · isolate · minimize · rotate</text>
+</g>
+
+<!-- resources -->
+<path d="M1225 570 H1280" stroke="#86efac" stroke-width="4"/><path d="M1267 558 L1281 570 L1267 582" stroke="#86efac" stroke-width="4" fill="none"/>
+<rect x="1290" y="350" width="255" height="445" rx="18" class="panel"/>
+<text x="1417" y="390" text-anchor="middle" class="section">04 · RESOURCES</text>
+<rect x="1315" y="425" width="205" height="70" rx="11" class="tile"/><text x="1417" y="466" text-anchor="middle" class="body">Frontend / Web</text>
+<rect x="1315" y="515" width="205" height="70" rx="11" class="tile"/><text x="1417" y="556" text-anchor="middle" class="body">Backend / APIs</text>
+<rect x="1315" y="605" width="205" height="70" rx="11" class="tile"/><text x="1417" y="646" text-anchor="middle" class="body">Database / Storage</text>
+<rect x="1315" y="695" width="205" height="70" rx="11" class="tile"/><text x="1417" y="736" text-anchor="middle" class="body">Cloud / SaaS</text>
+
+<!-- ops -->
+<path d="M640 795 V830" stroke="#86efac" stroke-width="4"/>
+<rect x="55" y="840" width="1490" height="125" rx="18" fill="url(#ops)" stroke="#34d399" stroke-width="2"/>
+<text x="800" y="880" text-anchor="middle" class="section green">05 · CONTINUOUS SECURITY OPERATIONS</text>
+<g class="small">
+<text x="190" y="922" text-anchor="middle">Centralized logs</text><text x="430" y="922" text-anchor="middle">Security alerts / SIEM</text><text x="680" y="922" text-anchor="middle">Dependency &amp; secret scans</text><text x="930" y="922" text-anchor="middle">CI/CD guardrails</text><text x="1180" y="922" text-anchor="middle">Incident response</text><text x="1400" y="922" text-anchor="middle">Backup / restore</text>
+</g>
+
+<!-- launch separate -->
+<rect x="55" y="995" width="1490" height="135" rx="18" fill="#202b45" stroke="#fbbf24" stroke-width="2"/>
+<text x="800" y="1035" text-anchor="middle" class="section orange">06 · WEBSITE LAUNCH READINESS  ·  SEPARATE FROM SECURITY CONTROLS</text>
+<text x="800" y="1072" text-anchor="middle" class="body">Domain &amp; DNS · TLS · robots.txt · sitemap · indexability · Search Console · GA4 · privacy / consent</text>
+<text x="800" y="1105" text-anchor="middle" class="body">SEO metadata · content · accessibility · performance · SPF / DKIM / DMARC · monitoring · rollback</text>
+<text x="800" y="1158" text-anchor="middle" class="tiny muted">robots.txt guides crawlers; it does not protect private routes or sensitive data. Public checks cannot prove internal security controls.</text>
+</svg>
